@@ -1,5 +1,9 @@
 # WISER
 
+<p align="center">
+  <img src="view.png">
+</p>
+
 ## Code Outline
 ```
 Line 1 imports all functions from the module turtle.
