@@ -18,15 +18,11 @@ colors = [#reddish colors
 
 options = [[0, 90.1], [50, 90]]
 for k in options:
-    x = k[0]
-    c = 0
-    for i in range(1000):
-        col = int(c)
+    for i in range(k[0], 1000 + k[0]):
+        col = int((i - k[0]) / 10)
         turtle.color(colors[col])
-        turtle.forward(x)
+        turtle.forward(i)
         turtle.right(k[1])
-        x = x + 1
-        c = c + 0.1
         if k == options[0]:
             turtle.penup()
             turtle.goto(0,0)
